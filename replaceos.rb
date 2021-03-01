@@ -1,6 +1,6 @@
 #!/bin/sh
-export http_proxy=http://192.168.1.17:3128
-export https_proxy=http://192.168.1.17:3128
+#export http_proxy=http://192.168.1.17:3128
+#export https_proxy=http://192.168.1.17:3128
 export PATH=/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin
 
 if [ -w /dev/console ]; then
@@ -30,8 +30,8 @@ else
 fi
 
 #!ruby
-ENV["http_proxy"] = "http://192.168.1.17:3128"
-ENV["https_proxy"] = "http://192.168.1.17:3128"
+#ENV["http_proxy"] = "http://192.168.1.17:3128"
+#ENV["https_proxy"] = "http://192.168.1.17:3128"
 ENV["PATH"] = "/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin"
 
 # A destination distribution selection, :FEDORA_33 and :CENTOS_8_STREAM are supported
